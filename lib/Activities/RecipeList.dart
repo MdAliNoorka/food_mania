@@ -36,7 +36,7 @@ class _RecipeListState extends State<RecipeList> {
                 // Align: Alignment.topCenter;
                 return InkWell(
                     onTap: () {
-                      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Recipe(widget.recipes[index].appUrl)));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => Recipe(widget.recipes[index].appUrl)));
                     },
                     child: Card(
                         margin: EdgeInsets.symmetric(
